@@ -1,0 +1,150 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot');
+	src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.woff') format('woff'),
+		url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 0;
+	/*text-transform: uppercase;*/
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	text-align: center;
+}
+
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before{
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+
+.icon-arrow-right:before {
+	content: "\e00d";
+}
+
+.icon-arrow-left:before {
+	content: "\e003";
+}
+
+
+
+/* Button 4 */
+.btn-4 {
+	border-radius: 50px;
+	min-width: 290px;
+	border: 3px solid rgba(53, 53, 53, 1); 
+	/*to change*/
+	color: #F4F5F7;
+	overflow: hidden;
+	font-weight: 500;
+}
+
+.btn-4:active {
+	border-color: #17954c;
+	color: #47a3da;
+}
+
+
+.btn-4:before {
+	position: relative;
+	visibility: hidden;
+	height: 100%;
+	font-size: 80%;
+	color: #353535;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-4:active:before {
+	color: #333333;
+}
+
+/* Button 4a */
+.btn-4a:before {
+	left: 130%;
+	top: 0;
+}
+
+.btn-4a:hover:before {
+	left: 110%;
+	visibility: visible;
+}
+
+
+
+	.btn{
+		border: none;
+ 		min-width: 0px; 
+ 		margin: 15px -75px; 
+		border-bottom: 3px solid #F4F5F7;
+	}
+
+	.btn:hover{
+		background-color: #F4F5F7;
+		border-radius: 0px;
+		-webkit-transform: skew(-20deg);
+		-moz-transform: skew(-20deg);
+		transform: skew(-20deg);
+		color: #353535;
+	}
+@media (max-width: 1023px) {
+	.btn{
+		border-radius: 0px;
+		padding: 25px 19px; 
+	}
+	.open-right .btn{
+		display: none;
+	}
+}
+
+@media (min-width: 1025px){
+	.btn{
+		font-size: 21px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+	.btn{
+		min-width: 240px;
+		margin: 15px -30px;
+	}
+}
+
