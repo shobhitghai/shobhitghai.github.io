@@ -828,3 +828,9 @@ body {
 .open-right #menu{
 	display: none;
 }
+
+.page-inner p.about-section-content{
+	text-align: justify;
+	text-justify: inter-word;
+	font-size: 1.1em;
+}
