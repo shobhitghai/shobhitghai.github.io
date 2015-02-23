@@ -301,8 +301,8 @@ body {
 /* Right side open */
 .open-right .side-left {
 	-webkit-transform: translateX(-80%) scale(.5);
-	/* transform: translateX(-80%) scale(.5); */
-	/* display: none; */
+	 transform: translateX(-80%) scale(.5); 
+	 display: none; 
 }
 
 .open-right .side-right {
