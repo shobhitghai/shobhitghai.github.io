@@ -99,13 +99,13 @@ body {
 	margin: 0 auto;
 	width: 150px;
 	height: 150px;
-	border-radius: 50%;
-	background: #47a3da;
+	border-radius: 15%;
+	/*background: #47a3da;*/
 }
 
 .profile img {
 	max-width: 100%;
-	border-radius: 25%;
+	border-radius: 15%;
 	/* opacity: 0.75; */
 }
 
